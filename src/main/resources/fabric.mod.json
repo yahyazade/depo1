@@ -1,11 +1,29 @@
 {
- "schemaVersion":1,
- "id":"zadeai",
- "version":"${version}",
- "name":"ZadeAI",
- "description":"Experimental Minecraft 1.21.1 AI companion character.",
- "authors":["ZadeAI project"],
- "environment":"*",
- "entrypoints":{"main":["dev.zadeai.ZadeAiMod"],"client":["dev.zadeai.ZadeAiClient"]},
- "depends":{"fabricloader":">=0.16.14","minecraft":"1.21.1","java":">=21","fabric-api":"*"}
+  "schemaVersion": 1,
+  "id": "zadeai",
+  "version": "${version}",
+  "name": "ZadeAI Voice Prototype",
+  "description": "Minecraft AI companion with Simple Voice Chat and OpenAI API",
+  "authors": [
+    "ZadeAI"
+  ],
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.zadeai.ZadeAiMod"
+    ],
+    "client": [
+      "dev.zadeai.ZadeAiClient"
+    ],
+    "voicechat": [
+      "dev.zadeai.voice.VoiceBridge"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "voicechat_api": ">=2.6.0"
+  }
 }

@@ -27,7 +27,7 @@ jobs:
       - name: Publish direct JAR
         run: |
           mkdir -p download
-          cp build/libs/zadeai-fabric-1.21.1-0.1.0.jar download/ZadeAI-1.21.1.jar
+          cp build/libs/zadeai-fabric-1.21.1-0.2.0.jar download/ZadeAI-1.21.1.jar
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add download/ZadeAI-1.21.1.jar
