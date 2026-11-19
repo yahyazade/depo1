@@ -1,0 +1,11 @@
+{
+ "schemaVersion":1,
+ "id":"zadeai",
+ "version":"${version}",
+ "name":"ZadeAI",
+ "description":"Experimental Minecraft 1.21.1 AI companion character.",
+ "authors":["ZadeAI project"],
+ "environment":"*",
+ "entrypoints":{"main":["dev.zadeai.ZadeAiMod"],"client":["dev.zadeai.ZadeAiClient"]},
+ "depends":{"fabricloader":">=0.16.14","minecraft":"1.21.1","java":">=21","fabric-api":"*"}
+}
